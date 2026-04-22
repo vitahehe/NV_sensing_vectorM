@@ -114,30 +114,29 @@ def odmr_model_full(x, p):
     Parameter vector p:
     - 8 centers
     - 8 contrasts
-    - delta_hf
-    - gamma_fwhm
-    - 3 hyperfine weights (later normalized)
+    - 1 shared delta_hf
+    - 8 linewidths gamma_fwhm_i
+    - 3 shared hyperfine weights
     - baseline polynomial coefficients b2, b1, b0
     """
-    centers = np.array(p[0:8])
-    contrasts = np.array(p[8:16])
+    centers = np.array(p[0:8], dtype=float)
+    contrasts = np.array(p[8:16], dtype=float)
 
-    delta_hf = p[16]
-    gamma_fwhm = p[17]
+    delta_hf = float(p[16])
+    gammas = np.array(p[17:25], dtype=float)
 
-    w_minus, w_zero, w_plus = p[18:21]
+    w_minus, w_zero, w_plus = p[25:28]
     s = w_minus + w_zero + w_plus + 1e-15
     w_minus, w_zero, w_plus = w_minus / s, w_zero / s, w_plus / s
 
-    b2, b1, b0 = p[21:24]
+    b2, b1, b0 = p[28:31]
     baseline = b2 * x**2 + b1 * x + b0
 
     y = baseline.copy()
-    for c, a in zip(centers, contrasts):
-        y -= odmr_triplet(x, c, a, delta_hf, gamma_fwhm, w_minus, w_zero, w_plus)
+    for c, a, g in zip(centers, contrasts, gammas):
+        y -= odmr_triplet(x, c, a, delta_hf, g, w_minus, w_zero, w_plus)
 
     return y
-
 
 def residuals_odmr_full(p, x, y):
     return odmr_model_full(x, p) - y
