@@ -1,2 +1,0 @@
-source_file,D_eff_GHz,delta_hf_MHz,lorentz_fwhm_MHz,global_rms,fit_success,fit_status,fit_message,w_m1,w_0,w_p1
-../data/ODMR_avg_99-6dBm_0mW.csv,2.8702743980292906,2.1721279276978156,1.293202532559542,0.012312723958161935,True,2,`ftol` termination condition is satisfied.,0.3408359402282829,0.3204566163220341,0.3387074434496828
