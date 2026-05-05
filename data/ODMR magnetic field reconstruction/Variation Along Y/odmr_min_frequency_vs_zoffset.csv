@@ -1,6 +1,0 @@
-folder,z_offset_mm,latest_file,f_min,v_min
-0cm-0.0mm,0.0,ODMR_avg_90dBm_0mW.csv,2823000000.0,1.462156
-0cm-0.1mm,0.1,ODMR_avg_70dBm_0mW.csv,2822500000.0,1.461687
-0cm-0.2mm,0.2,ODMR_avg_60dBm_0mW.csv,2822000000.0,1.462164
-0cm-0.3mm,0.3,ODMR_avg_40dBm_0mW.csv,2821500000.0,1.461344
-0cm-0.4mm,0.4,ODMR_avg_30dBm_0mW.csv,2819000000.0,1.458979
