@@ -1,0 +1,18 @@
+key,value
+PULSE_FOLDER,AVG_PULSE
+A_RESULTS_CSV_PATH,A_results.csv
+B_RESULTS_CSV_PATH,B_results.csv
+AXES_ORDER,"d1,d2,d3,d4"
+B_COMPONENTS,"Bx,By,Bz"
+EXTENT_UM,"[-100, 100, -100, 100]"
+grid_size,31
+n_pixels,961
+dt_s,0.0003864000000000003
+frame_rate_hz,2587.991718426499
+OFF_TIME_s,"(0.0, 0.05)"
+NEG_TIME_s,0.0571
+POS_TIME_s,0.0627
+B_unit,nT
+deltaNu_unit,MHz
+dV_unit,V
+grid_note,"pixel,row,col correspond to same serpentine grid used for plotting"
