@@ -1,18 +1,17 @@
 key,value
-PULSE_FOLDER,AVG_PULSE
-A_RESULTS_CSV_PATH,A_results.csv
-B_RESULTS_CSV_PATH,B_results.csv
-AXES_ORDER,"d1,d2,d3,d4"
-B_COMPONENTS,"Bx,By,Bz"
-EXTENT_UM,"[-100, 100, -100, 100]"
-grid_size,31
-n_pixels,961
-dt_s,0.0003864000000000003
-frame_rate_hz,2587.991718426499
+coordinate_x,horizontal image axis; magnet line M1-to-M2
+coordinate_y,vertical image axis; approximate wire direction
+coordinate_z,optical axis; diamond surface normal
+grid,31x31 serpentine grid; same grid used for plotting
+phase_definition,OFF interval average; POS and NEG are single frames
 OFF_TIME_s,"(0.0, 0.05)"
-NEG_TIME_s,0.0571
-POS_TIME_s,0.0627
+POS_TIME_requested_s,0.0627
+NEG_TIME_requested_s,0.0571
+POS_TIME_actual_s,0.06259680000000001
+NEG_TIME_actual_s,0.0571872
+POS_frame,162
+NEG_frame,148
 B_unit,nT
 deltaNu_unit,MHz
 dV_unit,V
-grid_note,"pixel,row,col correspond to same serpentine grid used for plotting"
+note,B components assume corrected lab-frame A_results.csv

@@ -4,15 +4,15 @@ metadata,gamma_e,,2.8024999999999997e-05,MHz/nT,Code convention used in Hamilton
 metadata,axes_order,,,,"d1,d2,d3,d4"
 metadata,frequency_unit,,,MHz,ODMR fit centers and frequency shifts are in MHz
 metadata,field_unit,,,nT,B0 and reconstructed pulse fields are in nT
-B0,Bx,,431050.6482275106,nT,Fitted static bias-field component
-B0,By,,3103253.514179959,nT,Fitted static bias-field component
-B0,Bz,,360537.4634331836,nT,Fitted static bias-field component
-B0,B_abs,,3153723.877758872,nT,Magnitude of fitted static bias field
-D,,,2867.2195514428126,MHz,Fitted zero-field splitting
-Mz,d1,,-0.13158253295128983,MHz,Axis-dependent static shift used in Hamiltonian fit
-Mz,d2,,-0.029805886060800285,MHz,Axis-dependent static shift used in Hamiltonian fit
-Mz,d3,,-0.21253059072855243,MHz,Axis-dependent static shift used in Hamiltonian fit
-Mz,d4,,-0.11221831514341996,MHz,Axis-dependent static shift used in Hamiltonian fit
+B0,Bx,,3103253.509700846,nT,Fitted static bias-field component
+B0,By,,431050.6489348288,nT,Fitted static bias-field component
+B0,Bz,,360537.4636241966,nT,Fitted static bias-field component
+B0,B_abs,,3153723.873469953,nT,Magnitude of fitted static bias field
+D,,,2867.2380434856314,MHz,Fitted zero-field splitting
+Mz,d1,,-0.15007544853431676,MHz,Axis-dependent static shift used in Hamiltonian fit
+Mz,d2,,-0.04829670838116626,MHz,Axis-dependent static shift used in Hamiltonian fit
+Mz,d3,,-0.23102256283961065,MHz,Axis-dependent static shift used in Hamiltonian fit
+Mz,d4,,-0.13071097880839758,MHz,Axis-dependent static shift used in Hamiltonian fit
 lower_center,d1,,2791.205771484455,MHz,Tracked lower-transition ODMR center
 upper_center,d1,,2944.9662198883325,MHz,Paired upper-transition ODMR center
 pair_center,d1,,2868.0859956863937,MHz,Mean of lower and upper transition
@@ -53,39 +53,39 @@ slope_window,d4,fit_end,2864.8,MHz,End of local ODMR slope-fit window
 slope_intercept,d4,intercept,5.603410000002822,V,Intercept of local ODMR slope fit
 slope_fit_quality,d4,rms_residual,2.4722459424438815e-05,V,RMS residual of local linear slope fit
 slope_fit_quality,d4,n_points,5.0,count,Number of points used in local slope fit
-A,d1,Bx,3.569847956441663e-07,MHz/nT,Lower-transition frequency response dnu/dB
-A,d1,By,-2.2163095356063423e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d1,Bz,-1.7190375034942917e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d2,Bx,3.556605086032505e-07,MHz/nT,Lower-transition frequency response dnu/dB
-A,d2,By,-2.1881905691998327e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d2,Bz,1.7580870037363637e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d3,Bx,-2.2812164388824386e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d3,By,2.4793313016289174e-06,MHz/nT,Lower-transition frequency response dnu/dB
+A,d1,Bx,-2.2163095357882412e-05,MHz/nT,Lower-transition frequency response dnu/dB
+A,d1,By,3.569847963262873e-07,MHz/nT,Lower-transition frequency response dnu/dB
+A,d1,Bz,-1.7190375032896553e-05,MHz/nT,Lower-transition frequency response dnu/dB
+A,d2,Bx,-2.1881905693135194e-05,MHz/nT,Lower-transition frequency response dnu/dB
+A,d2,By,3.5566050883062416e-07,MHz/nT,Lower-transition frequency response dnu/dB
+A,d2,Bz,1.7580870035544648e-05,MHz/nT,Lower-transition frequency response dnu/dB
+A,d3,Bx,2.47933129867306e-06,MHz/nT,Lower-transition frequency response dnu/dB
+A,d3,By,-2.281216439155287e-05,MHz/nT,Lower-transition frequency response dnu/dB
 A,d3,Bz,-1.608610404969113e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d4,Bx,-2.1442537617758718e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A,d4,By,2.2754796134449863e-06,MHz/nT,Lower-transition frequency response dnu/dB
-A,d4,Bz,1.5650035984435816e-05,MHz/nT,Lower-transition frequency response dnu/dB
-A_plus,Bx,d1,-1968.0138317559822,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bx,d2,-2925.9693042097306,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bx,d3,-22872.279884473057,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bx,d4,-22384.33727531994,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,By,d1,-22954.201723510432,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,By,d2,-22530.378497523034,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,By,d3,-407.55078652728287,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,By,d4,-322.2730196876035,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bz,d1,-15620.22219477921,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bz,d2,15784.051468084604,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bz,d3,-13867.32822574691,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus,Bz,d4,14754.84659065422,nT/MHz,Pseudoinverse converting frequency shifts to B-field
-A_plus_mT,Bx,d1,-0.001968013831755982,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bx,d2,-0.0029259693042097304,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bx,d3,-0.022872279884473056,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bx,d4,-0.022384337275319938,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,By,d1,-0.022954201723510433,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,By,d2,-0.022530378497523033,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,By,d3,-0.0004075507865272828,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,By,d4,-0.00032227301968760347,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bz,d1,-0.015620222194779208,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bz,d2,0.015784051468084603,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bz,d3,-0.01386732822574691,mT/MHz,Same A_plus shown in mT/MHz for comparison
-A_plus_mT,Bz,d4,0.01475484659065422,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A,d4,Bx,2.2754796125354915e-06,MHz/nT,Lower-transition frequency response dnu/dB
+A,d4,By,-2.1442537629809523e-05,MHz/nT,Lower-transition frequency response dnu/dB
+A,d4,Bz,1.5650035994212884e-05,MHz/nT,Lower-transition frequency response dnu/dB
+A_plus,Bx,d1,-22954.201722047226,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bx,d2,-22530.37849593058,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bx,d3,-407.55078704729686,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bx,d4,-322.2730198197381,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,By,d1,-1968.0138347788636,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,By,d2,-2925.969295181674,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,By,d3,-22872.279877274672,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,By,d4,-22384.33726748182,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bz,d1,-15620.22218978958,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bz,d2,15784.051464043103,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bz,d3,-13867.328231254907,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus,Bz,d4,14754.84658967281,nT/MHz,Pseudoinverse converting frequency shifts to B-field
+A_plus_mT,Bx,d1,-0.022954201722047225,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bx,d2,-0.02253037849593058,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bx,d3,-0.00040755078704729687,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bx,d4,-0.0003222730198197381,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,By,d1,-0.0019680138347788634,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,By,d2,-0.002925969295181674,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,By,d3,-0.022872279877274672,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,By,d4,-0.02238433726748182,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bz,d1,-0.01562022218978958,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bz,d2,0.015784051464043103,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bz,d3,-0.013867328231254906,mT/MHz,Same A_plus shown in mT/MHz for comparison
+A_plus_mT,Bz,d4,0.014754846589672809,mT/MHz,Same A_plus shown in mT/MHz for comparison
