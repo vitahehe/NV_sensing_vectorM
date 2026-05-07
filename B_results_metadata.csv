@@ -11,7 +11,17 @@ POS_TIME_actual_s,0.06259680000000001
 NEG_TIME_actual_s,0.0571872
 POS_frame,162
 NEG_frame,148
+pulse_amplitude_V,0.01
+pulse_amplitude_mV,10.0
+artificial_pulse_file,artificial_pulse_10mV.csv
+pulse_timing_file,pulse_timing_10mV.csv
+pulse_convention,0 V during OFF; -0.010 V during NEG; +0.010 V during POS
 B_unit,nT
 deltaNu_unit,MHz
 dV_unit,V
 note,B components assume corrected lab-frame A_results.csv
+current_pos_A,0.002
+current_neg_A,-0.002
+current_pos_mA,2.0
+current_neg_mA,-2.0
+effective_wire_height_um_for_simulation,20.0
