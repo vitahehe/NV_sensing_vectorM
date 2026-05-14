@@ -1,62 +1,41 @@
 # NV Sensing Data and Analysis Workspace
 
-This repository contains code and data for analyzing NV-center diamond ODMR and pulse experiments. Below is an overview of the data structure, file locations, and how to use the analysis tools.
+This repository contains notebooks corresponding to The High-resolution measurement
+of the magnetic field vector components project- The 5 sections from the report can be found in the following parts:
 
-## Data Structure
+## In this repository
 
-### 1. Single Averaged ODMR File
-- **Location:** `data/ODMR_avg_99-6dBm_0mW.csv`
-- **Description:** A single, fully averaged continuous-wave ODMR spectrum. Used for demonstration and single-spectrum fitting/visualization.
+1. ** Reconstruction of the field-response matrix A- A_MATRIX folder**
+   - `A_MATRIX/nv_hamiltonian.py` computes NV transition frequencies and numerical derivatives to build the sensitivity matrix `A`.
+    - `A_MATRIX/fit_functions.py` fitting help functions.
+   - `A_MATRIX/get_A_matrix.ipynb` shows how to calculate `A`. Input NV axis experimental asssignment
 
-### 2. Batch Averaged ODMR Data (Displacement Series)
-- **Location:** `avareged_data/outputs/Variation Along X|Y|Z/`
-- **Files:**
-  - `*_averaged.csv`: Averaged ODMR spectra for different displacements along X, Y, or Z.
-  - `averaging_statistics.csv`: Statistics for each displacement.
-  - `individual_plots/`, `overlay_plot.png`: Visualizations for each scan.
-- **Processed Results:**
-  - `fitting_odmr/batch_fit_outputs_lorentzian/Variation Along X|Y|Z/`: Contains fit results, plots, and summary tables for each displacement.
+2. **Pulse-data magnetic field reconstruction  + simulations and wire geometry optimization**
+   - `pulse_data_reconstruction_simulation' folder consist of both pulse data reconstruction and simulations+ geometry wire optimization
 
-### 3. Pulse Data (Time Traces)
-- **Location:** `data/Avg_npy_pulse/`
-- **Files:** `Pulse_avg_d1.npy`, `Pulse_avg_d2.npy`, `Pulse_avg_d3.npy`, `Pulse_avg_d4.npy`
-- **Description:** Each file contains a 2D array: first column is time (s), remaining columns are pixel voltages for a given NV orientation.
+3. **Reconstruct current density**
+   - `current_denity.ipynb` performs current density reconstruction from measured poulse data.
+   - The reconstruction workflowrelies on the B-field component(s) measured by the NV sensor.
 
-### 4. Magnetic Field Simulation and NV Frame Analysis
-- **Location:** `B_field_simulation/`, `nv_to_lab_frame/`
-- **Description:** Notebooks and scripts for simulating magnetic fields and transforming between NV and lab frames.
+4. **Analyze experimental sensitivity**
+   - `sensitivity.ipynb` measurement noice and estimation of sensitivity.
 
-## Analysis Code
 
-### Fitting Functions
-- **Location:** `fitting_odmr/fitlorenzo_functions.py`
-- **Description:** All fitting and preprocessing functions for ODMR analysis are here. Import this module in your notebooks/scripts:
-  ```python
-  from fitting_odmr.fitlorenzo_functions import fit_global_odmr, ...
-  ```
 
-### Notebooks
-- **Single ODMR Fit:** `fitting_odmr/odmr_fit_single_file.ipynb`
-  - Visualizes and fits the single averaged ODMR file. No results are saved; all outputs are displayed.
-- **Batch ODMR Fit:** (see batch processing code in `fitlorenzo_literature_ready_corrected.ipynb` or convert to a notebook using `fitlorenzo_functions.py`)
-- **Pulse Analysis:** `NV_pulse_analysis.ipynb`
-  - Loads and visualizes pulse data from `.npy` files.
+### 1. Install dependencies
+Create and activate a Python environment, then install dependencies:
 
-## How to Use
-1. **Install dependencies:** Activate your Python environment and install required packages (see `.venv` or requirements in code cells).
-2. **Run Notebooks:**
-   - For single ODMR: open and run `fitting_odmr/odmr_fit_single_file.ipynb`.
-   - For batch ODMR: adapt or run batch code using `fitlorenzo_functions.py`.
-   - For pulse data: open and run `NV_pulse_analysis.ipynb`.
-3. **Import Fitting Functions:**
-   - Use `from fitting_odmr.fitlorenzo_functions import ...` in your scripts/notebooks for all fitting and preprocessing routines.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
 
-## Folder Overview
-- `data/` — Raw and averaged data files
-- `avareged_data/outputs/` — Batch-averaged ODMR data by displacement
-- `fitting_odmr/` — Fitting code, results, and notebooks
-- `B_field_simulation/`, `nv_to_lab_frame/` — Simulation and frame transformation notebooks
+### 2.The use of each file is contained in each notebooks separatly
 
----
-For further details, see code comments and notebook markdown cells. All analysis is modular and can be adapted for new data or additional scans.
+## Recommended installation
+
+```bash
+python -m pip install -r requirements.txt
+```
 
